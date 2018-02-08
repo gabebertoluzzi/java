@@ -19,7 +19,13 @@ public class Circle {
 		color = "red";
 	}
 	
-	// A public method for retreiving the radius.
+	// 3rd constructor with given radius and color
+	public Circle(double r, String c) {
+		radius = r;
+		color = c;
+	}
+	
+	// A public method for retrieving the radius.
 	public double getRadius() {
 		return radius;
 	}
