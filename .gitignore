@@ -1,4 +1,8 @@
 /.metadata/
 /.recommenders/
+<<<<<<< HEAD
 .metadata/.log
 .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+=======
+JavaWork/
+>>>>>>> 35ff94a81104c901c6fb0a886b3559b98ca2bb63

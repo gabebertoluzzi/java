@@ -18,5 +18,13 @@ public class TestCircle {
 		// Invoke public methods on instance c2
 		System.out.println("Circle c2 has radius " + c2.getRadius() + 
 				" and area " + c2.getArea());
+		
+		// Declare an instance of class Circle called c3
+		// Construct the instance c3 by invoking the third constructor
+		//  with given radius and color
+		Circle c3 = new Circle(3.0, "green");
+		// Invoke the public methods on instance c3
+		System.out.println("Circle c3 has radius of " + c3.getRadius()
+				+ "and area of " + c3.getArea());
 	}
 }
