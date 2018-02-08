@@ -25,6 +25,28 @@ public class TestCircle {
 		Circle c3 = new Circle(3.0, "green");
 		// Invoke the public methods on instance c3
 		System.out.println("Circle c3 has radius of " + c3.getRadius()
-				+ "and area of " + c3.getArea());
+				+ " and area of " + c3.getArea());
+		
+		// Getting the instance colors
+		System.out.println("The color of c1 is " + c1.getColor());
+		System.out.println("The color of c2 is " + c2.getColor());
+		System.out.println("The color of c3 is " + c3.getColor());
+		
+		// Testing public vs private
+		// using .getRadius works as it is public/visible
+		//  vs .radius is which private/not visible
+		//System.out.println(c1.radius);
+		//c1.radius = 3.0;
+		
+		// Testing setters
+		c3.setColor("black");
+		c3.setRadius(12.0);
+		System.out.println("The new color of c3 is " + c3.getColor() +
+				" and the radius is " + c3.getRadius());
+		
+		// implicit toString call
+		System.out.println(c1);
+		// Explicit toString call
+		System.out.println(c2.toString());
 	}
 }
