@@ -413,3 +413,13 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/NTU-OOP/src/C
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
 !SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2018-02-08 10:42:08.210
 !MESSAGE Cannot determine URI for '/NTU-OOP/src/Circle.java'.
+!SESSION 2018-02-08 10:43:57.485 -----------------------------------------------
+eclipse.buildId=4.7.1.M20171009-0410
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/gabe/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/gabe/.eclipse_keyring
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-02-08 10:56:32.224
+!MESSAGE Server returned lastModified <= 0 for https://raw.github.com/guari/eclipse-ui-theme/master/com.github.eclipseuitheme.themes.updatesite/content.jar
