@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 INDEX VERSION 1.130+C:\java\.metadata\.plugins\org.eclipse.jdt.core
 3017952843.index
 560431806.index
+=======
+INDEX VERSION 1.130+/Users/gabe/java/java/.metadata/.plugins/org.eclipse.jdt.core
+62395597.index
+2485636695.index
+3665656385.index
+>>>>>>> 736306f54be1f04e3e7f54a5086b9109e0b5b63a
