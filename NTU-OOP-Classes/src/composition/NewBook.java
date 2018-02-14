@@ -1,5 +1,7 @@
 package composition;
 
+import java.util.Arrays;
+
 public class NewBook {
 	private String name;
 	private Author[] authors;
@@ -44,7 +46,7 @@ public class NewBook {
 	}
 	
 	public String toString() {
-		return "Book[name=" + name + ",Authors=" + authors + ",price=" + price + ",qty=" + qty + "]";
+		return "Book[name=" + name + ",Authors=" + Arrays.toString(authors) + ",price=" + price + ",qty=" + qty + "]";
 	}
 	
 	public String getAuthorNames() {
