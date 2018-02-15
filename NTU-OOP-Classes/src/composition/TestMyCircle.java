@@ -5,6 +5,8 @@ public class TestMyCircle {
 		MyCircle c2 = new MyCircle(7, 8, 4);
 	
 		System.out.println(c2);
+		
+		System.out.println(c2.getCenterXY());
 	}
 
 }

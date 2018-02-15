@@ -1,7 +1,9 @@
 package composition;
 
+//import java.util.Arrays;
+
 public class MyCircle {
-	// private vars
+	// private variables
 	private MyPoint center;
 	private int radius;
 	
@@ -13,9 +15,9 @@ public class MyCircle {
 	
 	// 2nd constructor, given int values
 	public MyCircle(int x, int y, int radius) {
-		center = new MyPoint();
-		center.setX(x);
-		center.setY(y);
+		center = new MyPoint(x, y);
+		//center.setX(x);
+		//center.setY(y);
 		this.radius = radius;
 	}
 	
@@ -29,4 +31,43 @@ public class MyCircle {
 		return "MyCircle[radius=" + radius + ",center="
 				+ center.toString() + "]";
 	}
+	
+	// radius getters/setters
+	public int getRadius() {
+		return radius;
+	}
+	
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+	
+	// Center getters/setters
+	public MyPoint getCenter()	{
+		return center;
+	}
+	
+	public void setCenter(MyPoint center) {
+		this.center = center;
+	}
+	
+	public int getCenterX() {
+		return center.getX();
+	}
+	
+	public void setCenterX(int x) {
+		this.center.setX(x);
+	}
+	
+	public int getCenterY() {
+		return center.getY();
+	}
+	
+	public void setCenterY(int y) {
+		this.center.setY(y);
+	}
+	
+	public int[] getCenterXY() {
+		return center.getXY();
+	}
+	
 }
