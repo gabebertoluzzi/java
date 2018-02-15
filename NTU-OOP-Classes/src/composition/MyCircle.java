@@ -70,4 +70,18 @@ public class MyCircle {
 		return center.getXY();
 	}
 	
+	// Area
+	public double getArea() {
+		return radius*radius*Math.PI;
+	}
+	
+	// Circumference
+	public double getCircumference() {
+		return 2 * Math.PI * radius;
+	}
+	
+	public double distance(MyCircle another) {
+		return center.distance(another.center);
+	}
+	
 }
