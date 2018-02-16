@@ -69,9 +69,10 @@ public class MyPoint {
 	}
 	
 	public double distance() {
-		// from (0,0) centerpoint
+		// from (0,0) center point
 		return Math.sqrt(x*x - y*y);
 		
 	}
-	
+
+
 }

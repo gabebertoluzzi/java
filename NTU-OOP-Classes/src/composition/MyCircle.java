@@ -81,7 +81,34 @@ public class MyCircle {
 	}
 	
 	public double distance(MyCircle another) {
-		return center.distance(another.center);
+		//return this.center.distance(another.center);
+		int xDiff = this.getCenterX() - another.getCenterX();
+		int yDiff = this.getCenterY() - another.getCenterY();
+		return Math.sqrt(xDiff*xDiff - yDiff*yDiff);
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
