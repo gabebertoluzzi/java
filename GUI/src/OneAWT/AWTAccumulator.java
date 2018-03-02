@@ -7,7 +7,7 @@ public class AWTAccumulator extends Frame implements ActionListener {
 	private Label lblOutput;
 	private TextField tfInput;
 	private TextField tfOutput;
-	private int sum = 0;
+	private int sum = 1;
 	
 	// Constructor to setup the UI components and event handlers
 	public AWTAccumulator() {
@@ -43,10 +43,11 @@ public class AWTAccumulator extends Frame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent evt) {
 		int numberIn = Integer.parseInt(tfInput.getText());
-		sum += numberIn;
-		for (int i = 0; i < )
+		for (int i = 1; i <= numberIn; i++) {
+			sum = sum * i;
+		}
 		tfInput.setText("");
-		tfOutput.setText("Accumulated sum is: " + sum);
+		tfOutput.setText("" + sum);
 	}
 	
 }

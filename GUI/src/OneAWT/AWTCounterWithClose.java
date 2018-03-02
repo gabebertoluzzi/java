@@ -3,52 +3,45 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class AWTCounterWithClose extends Frame implements ActionListener {
+public class AWTCounterWithClose extends Frame implements ActionListener, WindowListener {
 	// Declare component Label
 	private Label lblCount;
 	// Declare component TextField
 	private TextField tfCount;
 	// Declare component Label
-	private Label lblFactorial;
+	//private Label lblFactorial;
 	// Declare component TextField
-	private TextField tfFactorial;
+	//private TextField tfFactorial;
 	// Declare component Button
 	private Button btnCount;
 	// Counter's value
 	private int count = 0;
 	// factorial value
-	private int factorial = count;
+	//private int factorial = count;
 	
 	// Constructor to setup UI components and event handlers
-	public AWTCounter() {
+	public AWTCounterWithClose() {
 		setLayout(new FlowLayout());
 		// 'super' Frame sets layout to FlowLayout, which arranges
 		//   components from left-to-right, then top-to-bottom
 		
-		lblCount = new Label("n");		// Construct component Label
+		lblCount = new Label("Count");		// Construct component Label
 		add(lblCount);						// "super" Frame adds Label
 		
 		// Counter textfield
 		tfCount = new TextField(count + "", 5);
 		tfCount.setEditable(false);
 		add(tfCount);
+	
 		
-		// Factorial Label
-		lblFactorial = new Label("factorial(n)");
-		add(lblFactorial);
-		
-		// Factorial Textfield
-		tfFactorial = new TextField(factorial + "", 5);
-		tfFactorial.setEditable(false);
-		add(tfFactorial);
-		
-		
-		btnCount = new Button("Next");
+		btnCount = new Button("Count");
 		add(btnCount);
 		btnCount.addActionListener(this);
 		
+		addWindowListener(this);
+		
 		setSize(250, 100);
-		setTitle("AWT Counter - n!");
+		setTitle("AWT Counter");
 		setVisible(true);			// show "super" Frame
 	}
 	
@@ -58,21 +51,24 @@ public class AWTCounterWithClose extends Frame implements ActionListener {
 		++count;
 		tfCount.setText(count + "");
 		
-		factorial = count * count;
-		tfFactorial.setText(factorial + "");
-		
 	}
 	
 	// the entry main() method
 	public static void main(String[] args) {
 		// Invoke constructor by allocating anonymous instance
-		new AWTCounter();
+		new AWTCounterWithClose();
 	}
 	
-	 public AWTCounterWithClose () {
-	      addWindowListener(this);
-	        // "super" Frame fires WindowEvent.
-	        // "super" Frame add "this" instance as the WindowEvent listener
-	   }
-
+	@Override
+	public void windowClosing(WindowEvent evt) {
+		System.exit(0);		// terminate the program
+	}
+	
+	// Not used, but need to provide an empty body to compile
+	@Override public void windowOpened(WindowEvent evt) {}
+	@Override public void windowClosed(WindowEvent evt) {}
+	@Override public void windowIconified(WindowEvent evt) {}
+	@Override public void windowDeiconified(WindowEvent evt) {}
+	@Override public void windowActivated(WindowEvent evt) {}
+	@Override public void windowDeactivated(WindowEvent evt) {}
 }

@@ -34,7 +34,7 @@ public class AWTCounter extends Frame implements ActionListener {
 		add(tfCount);
 		
 		// Factorial Label
-		lblFactorial = new Label("factorial(n)");
+		lblFactorial = new Label("factorial(NNN)");
 		add(lblFactorial);
 		
 		// Factorial Textfield
