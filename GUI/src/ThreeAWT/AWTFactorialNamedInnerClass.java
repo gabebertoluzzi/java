@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 // really a factorial outputer
-public class AWTAccumulatorNamedInnerClass extends Frame {
+public class AWTFactorialNamedInnerClass extends Frame {
 	private Label lblInput;
 	private Label lblOutput;
 	private TextField tfInput;
@@ -11,7 +11,7 @@ public class AWTAccumulatorNamedInnerClass extends Frame {
 	private int factorial;
 	
 	// Constructor
-	public AWTAccumulatorNamedInnerClass() {
+	public AWTFactorialNamedInnerClass() {
 		setLayout(new FlowLayout());
 		
 		lblInput = new Label("Enter an int");
@@ -29,7 +29,7 @@ public class AWTAccumulatorNamedInnerClass extends Frame {
 		tfOutput.setEditable(false);
 		add(tfOutput);
 		
-		setTitle("AWT Accumulator");
+		setTitle("AWT Factorial");
 		setSize(500, 120);
 		setVisible(true);
 		
