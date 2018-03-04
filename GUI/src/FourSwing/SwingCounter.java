@@ -13,7 +13,9 @@ public class SwingCounter extends JFrame {
 	// variables
 	private JTextField tfCount;
 		// Use Swing's JTextFField instead of AWT's TextField
-	private JButton btnCount;
+	private JButton btnCountUp;
+	private JButton btnCountDown;
+	private JButton btnReset;
 		// Using Swing's JButton instead of AWT's Button
 	private int count = 0;
 	
@@ -29,13 +31,33 @@ public class SwingCounter extends JFrame {
 		tfCount.setHorizontalAlignment(JTextField.RIGHT);
 		cp.add(tfCount);
 		
-		btnCount = new JButton("Count");
-		cp.add(btnCount);
-		btnCount.addActionListener(new ActionListener() {
+		btnCountUp = new JButton("Count Up");
+		cp.add(btnCountUp);
+		btnCountUp.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
 				++count;
 				tfCount.setText(count + "");
+			}
+		});
+		
+		btnCountDown = new JButton("Count Down");
+		cp.add(btnCountDown);
+		btnCountDown.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent evt) {
+				--count;
+				tfCount.setText(count + "");
+			}
+		});
+		
+		btnReset = new JButton("Reset");
+		cp.add(btnReset);
+		btnReset.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent evt) {
+				count = 0;
+				tfCount.setText("");
 			}
 		});
 		
