@@ -14,7 +14,9 @@ public class SwingAdder extends JFrame {
 		// Swing components should be added to the content-pane of the JFrame
 		Container cp = getContentPane();
 		// Set this Container to grid layout of 4 rows and 2 columns
-		cp.setLayout(new GridLayout(4, 2, 10, 3));
+		//cp.setLayout(new GridLayout(4, 2, 10, 3));
+		cp.setLayout(new GridLayout(6, 2, 10, 3));
+
 		
 		// Components are added from left-to-right, top-to-bottom
 		// tfNumber1, then tfNumber2, then tfResult
